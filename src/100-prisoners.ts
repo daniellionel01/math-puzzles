@@ -56,7 +56,6 @@ function strategize() {
 
     let won = false
     for (let p = 1; p <= PRISONERS; p++) {
-      const visited: number[] = []
       let found = false
       let nextBox = p;
       for (let j = 1; j <= PRISONERS/2; j++) {
