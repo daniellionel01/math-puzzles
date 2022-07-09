@@ -42,7 +42,7 @@ function pickRandom() {
     if (won) correct += 1
   }
   const prob = correct / ITERS
-  console.log("picking at random:", prob)
+  console.log(`picking at random: ${(prob * 100).toFixed(2)}%`)
 }
 
 function strategize() {
@@ -76,7 +76,7 @@ function strategize() {
     if (won) correct += 1
   }
   const prob = correct / ITERS
-  console.log("strategize:", prob)
+  console.log(`strategize: ${(prob * 100).toFixed(2)}%`)
 }
 
 pickRandom()

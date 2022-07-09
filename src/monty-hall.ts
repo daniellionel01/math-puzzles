@@ -16,7 +16,7 @@ function withoutSwitch() {
     }
   }
   const prob = correct / ITERS
-  console.log("without switching:", prob)
+  console.log(`without switching: ${(prob * 100).toFixed(2)}%`)
 }
 
 function withSwitch() {
@@ -44,7 +44,7 @@ function withSwitch() {
     }
   }
   const prob = correct / ITERS
-  console.log("without switching:", prob)
+  console.log(`with switching: ${(prob * 100).toFixed(2)}%`)
 }
 
 withoutSwitch()
